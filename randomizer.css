@@ -1,0 +1,4 @@
+#leadPhoto {
+    background: url(zast.jpg) no-repeat center center fixed;
+    background-size: cover;
+}
