@@ -2,3 +2,7 @@
     background: url(zast.jpg) no-repeat center center fixed;
     background-size: cover;
 }
+article{
+    background-color: #F3EAE3;
+    border: 1px solid #DFD1C3;
+}
