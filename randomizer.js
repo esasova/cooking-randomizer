@@ -1,7 +1,7 @@
 //liste des plats possibles
 const dej = ['Curry aux légumes', 'Lentilles bolognaises', 'Tarte aux poireaux', 'Pâté de pommes de terre', 'Lasagnes'];
-const diner = ['Légumes au four', 'Poêlée de poireaux', 'Velouté de potimaron'];
-const dessert = ['Gâteau au chocolat', 'Gâteau yaourt', 'Mousse', 'Syrniki', 'Cookies', 'Charlotte aux pommes'];
+const din = ['Légumes au four', 'Poêlée de poireaux', 'Velouté de potimaron'];
+const des = ['Gâteau au chocolat', 'Gâteau yaourt', 'Mousse', 'Syrniki', 'Cookies', 'Charlotte aux pommes'];
 
 // récupération des boutons
 const btnDej = document.getElementById('btnDej');
@@ -18,8 +18,7 @@ function choisir(repas, showResult) {
     const randomChoice = Math.floor(Math.random() * repas.length);
     showResult.innerHTML = '';
     let mealChoice = repas[randomChoice];
-    console.log(mealChoice)
-    //showResult.textContent = mealChoice;
+    showResult.textContent = mealChoice;
 }
 
-choisir(dej, dejResult);
+//btnDej.addEventListener('click', choisir(des, desResult));
