@@ -8,15 +8,18 @@ const btnDej = document.getElementById('btnDej');
 const btnDin = document.getElementById('btnDin');
 const btnDes = document.getElementById('btnDes');
 
-//fonction générique qui choisit un plat aléatoire
-const choisir = () =>{
-    
+//récupération des éléménts HTML pour afficher le résultat
+const dejResult = document.getElementById('nomDej');
+const dinResult = document.getElementById('nomDin');
+const desResult = document.getElementById('nomDes');
+
+//fonction générique qui choisit un plat aléatoire et l'affiche sur la page
+function choisir(repas, showResult) {
+    const randomChoice = Math.floor(Math.random() * repas.length);
+    showResult.innerHTML = '';
+    let mealChoice = repas[randomChoice];
+    console.log(mealChoice)
+    //showResult.textContent = mealChoice;
 }
 
-// btnDej.addEventListener('click', ()=>{
-//     let nomDej = document.getElementById('nomDej');
-//     nomDej.innerHTML = '';
-//     const randomChoice = Math.floor(Math.random()*dej.length);
-//     let mealChoice = dej[randomChoice];
-//     nomDej.textContent = mealChoice;
-// })
+choisir(dej, dejResult);
